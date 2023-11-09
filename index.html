@@ -1,1 +1,227 @@
-<h1>HEllo HTML</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+
+        /* 
+        selector {
+            prop1: val1;
+            prop2: val2;
+        } 
+        */
+
+        div {
+            color: green;
+        }
+
+        .divtag {
+            margin: 50px;
+            padding: 20px;
+            border: solid 1px black;
+            color:blue;
+            background-color: red;
+            font-size: 30px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #btn {
+            background-color: blue;
+            color: white;
+        }
+
+        #btn:hover {
+            background-color: white;
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    
+        <a href="https://google.co.in">
+            <button id="btn" >
+                Go To Google
+            </button>
+        </a> 
+
+
+
+    <div class="divtag">this is div</div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" autofocus required> <br>
+
+        <textarea></textarea> <br>
+
+        Gender:
+        <input type="radio" name="gender" id="male"> <label for="male"> Male </label> 
+        <input type="radio" name="gender" id="female"> <label for="female"> Female </label> 
+        <input type="radio" name="gender" id="other"> <label for="other"> Other </label> 
+
+        Hobbies:
+        <input type="checkbox" name="" id="cricket"> <label for="cricket"> Cricket</label>
+        <input type="checkbox" name="" id=""> Football
+        <input type="checkbox" name="" id=""> Hockey
+
+        City:
+        <select>
+            <option value="">Select Option</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="pune">Pune</option>
+            <option value="nagpur">Nagpur</option>
+        </select>
+
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- https://www.google.com/search?q=texbox ke andar ki value -->
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <table border="1">
+        <tfoot>
+            <tr>
+                <td colspan="2">This is table footer</td>
+            </tr>
+        </tfoot>
+        
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>Suraj</td>
+            </tr>
+
+            <tr>
+                <td>Tejas</td>
+            </tr>
+        </tbody>
+        
+        <caption>Sample Table</caption>
+
+    </table>
+
+
+    <table border="1">
+        <tr>
+            <td colspan="2" align="center">A</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+    </table>
+
+
+    <table border="1" style="background-color: yellow;">
+        <tr>
+            <td colspan="3" align="center">A</td>
+        </tr>
+        <tr>
+            <td rowspan="2">B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">E</td>
+        </tr>
+
+        <tr>
+            <td>
+                <table border="1" style="background-color: green;">
+                    <tr>
+                        <td>F</td>
+                        <td>G</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <openingtag attr1="value1" attr2="value2">innerHTML content</closingtag> -->
+
+    <div style="color: red">This is statement from div tag</div>
+    <div>Statement 2</div>
+
+
+
+
+
+
+    <h1>1. Hello World</h1>
+    <h2>2. Hello World</h2>
+    <h3>3. Hello World</h3>
+    <h4>4. Hello World</h4>
+    <h5>5. Hello World</h5>
+    <h6>6. Hello World</h6>
+</body>
+
+
+</html>
