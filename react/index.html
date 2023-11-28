@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+
+    <div id="mydiv"></div>
+
+    <script type="text/babel" src="./header.js"></script>
+    <script type="text/babel" src="./footer.js"></script>
+    <script type="text/babel" src="./sqr.js"></script>
+    <script type="text/babel" src="./reqres.js"></script>
+    <script type="text/babel" src="./jsonph.js"></script>
+
+    <script type="text/babel">
+    
+      function Hello() {
+        return <>
+        	<Header />
+            <JsonPH />
+            <ReqRes />
+        	<Sqr x={5}/>
+        	<Sqr x={6}/>
+        	<Sqr x={7}/>
+        	<Sqr x={8}/>
+            <Footer />
+           </>;
+      }
+      
+      //CW1 create footer component and show it after hello world
+      
+      const container = document.getElementById('mydiv');
+      const root = ReactDOM.createRoot(container);
+      root.render(<Hello />)
+    </script>
+
+  </body>
+</html>
