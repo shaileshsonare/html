@@ -1,0 +1,19 @@
+<input type="text" id="num" autofocus>
+<br>
+<button onclick="getSqr()">Get Square</button>
+<h1 id="result"></h1>
+
+<script>
+function getSqr() {
+    a = document.getElementById("num").value
+    
+    url = `https://turbo-engine-rv6gr9wqg92wg6-8989.app.github.dev/sqr/${a}`
+
+    fetch(url)
+    .then(res => res.json()) 
+    .then(res => {
+        console.log(res)
+        document.getElementById("result").innerHTML = (`Square of ${a}  is ${res['result']}`)
+    })
+}
+</script>
